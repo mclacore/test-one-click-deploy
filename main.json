@@ -11,13 +11,18 @@
   "parameters": {
     "name": {
       "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]"
     }
   },
   "resources": [
     {
       "type": "Microsoft.Resources/deploymentScripts",
       "apiVersion": "2019-10-01-preview",
-      "name": "Massdriver-Provisioner",
+      "name": "[parameters('name')]",
+      "location": "[parameters('location')]",
       "kind": "AzurePowerShell",
       "identity": {
         "type": "UserAssigned",
