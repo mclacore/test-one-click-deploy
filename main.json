@@ -18,7 +18,6 @@
       "type": "Microsoft.Resources/deploymentScripts",
       "apiVersion": "2019-10-01-preview",
       "name": "Massdriver-Provisioner",
-      "resourceGroup": "Massdriver-Provisioner",
       "kind": "AzurePowerShell",
       "identity": {
         "type": "UserAssigned",
